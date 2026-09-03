@@ -1,0 +1,45 @@
+{
+  "name": "genpark-merchant-dynamic-pricing-elasticity-optimizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic price elasticity optimizer modeling competitor benchmarks and gross margin floors to maximize gross profit.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "merchant-agent",
+  "tags": [
+    "pricing-promotions",
+    "price-elasticity",
+    "margin-protection",
+    "merchant-agent",
+    "anthropic-commerce"
+  ],
+  "inputs": {
+    "sku_id": {
+      "type": "string"
+    },
+    "current_retail_price_usd": {
+      "type": "number"
+    },
+    "cogs_cost_usd": {
+      "type": "number"
+    },
+    "competitor_min_price_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "pricing_optimization_id": {
+      "type": "string"
+    },
+    "recommended_adjusted_price_usd": {
+      "type": "number"
+    },
+    "projected_gross_margin_pct": {
+      "type": "number"
+    },
+    "elasticity_simulation_chart_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
